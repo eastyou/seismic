@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seismic"
+version = "0.1.0"
+description = "初中地理：地震波与震级的计算与练习纸生成工具"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["python", "education", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Natural Language :: Chinese (Simplified)",
+]
+
+[project.scripts]
+seismic = "seismic.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/seismic"
+Source = "https://github.com/eastyou/seismic"
+
+[tool.setuptools]
+packages = ["seismic"]
